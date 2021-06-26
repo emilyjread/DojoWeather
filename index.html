@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <h1 class="title">DojoWeather</h1>
+            <div class="links">
+                <a class="city-link" href="#" onclick="alert('Loading weather report for Burbank...')">Burbank</a>
+                <a class="city-link" href="#" onclick="alert('Loading weather report for Chicago...')">Chicago</a>
+                <a class="city-link" href="#" onclick="alert('Loading weather report for Dallas...')">Dallas</a>
+            </div>
+        </nav>
+        <div id="main">
+            <div id="city-info">
+                <h2> San Jose </h2>
+                <div class="showtemp">
+                    <label for="temp-scale">show temperature in </label>
+                    <select name="temp-scale" id="temp-scale" onchange="changeTempScale(this)">
+                        <option value="f">°F</option>
+                        <option value="c">°C</option>
+                    </select>
+                </div>
+            </div>
+            <div id="forecasts">
+                <div class="forecast-day">
+                    <p class="day-title">Today</p>
+                    <img src="assets/some_rain.png" alt="weather-img">
+                    <p class="forecast-desc">some rain</p>
+                    <div class="temps">
+                        <b class= "high">50</b>
+                        <b class="low">42</b>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <p class="day-title">Tomorrow</p>
+                    <img src="assets/some_sun.png" alt="weather-img">
+                    <p class="forecast-desc">some sun</p>
+                    <div class="temps">
+                        <b class= "high">72</b>
+                        <b class="low">51</b>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <p class="day-title">Friday</p>
+                    <img src="assets/some_clouds.png" alt="weather-img">
+                    <p class="forecast-desc">some clouds</p>
+                    <div class="temps">
+                        <b class= "high">70</b>
+                        <b class="low">53</b>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <p class="day-title">Saturday</p>
+                    <img src="assets/some_sun.png" alt="weather-img">
+                    <p class="forecast-desc">some sun</p>
+                    <div class="temps">
+                        <b class= "high">90</b>
+                        <b class="low">66</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cookies-container">
+            <img src="assets/cookie.png" alt="cookie">
+            <div class="cookie-content"> 
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize ads and content and ads, to provide social media features amd to analyze our traffic. <a href="#">Read more</a> </p>
+            </div>
+            <button class="accept" onclick="acceptCookie(this)">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
